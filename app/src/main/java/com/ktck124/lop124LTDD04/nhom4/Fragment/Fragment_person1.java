@@ -36,12 +36,7 @@ public class Fragment_person1 extends Fragment {
     private Button btnUpdate;
     private ImageView imageView ;
 
-import java.util.ArrayList;
 
-
-public class Fragment_person1 extends Fragment{
-
-    private View mview;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
