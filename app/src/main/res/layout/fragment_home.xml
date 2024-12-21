@@ -96,7 +96,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="14dp"
             android:layout_marginTop="172dp"
-            android:text="Danh sách quận"
+
+            android:text="Danh sách sinh viên"  
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -115,13 +116,15 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ListView
-        android:id="@+id/list_quan"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    android:id="@+id/list_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@android:color/transparent"
+    android:dividerHeight="15dp"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
         android:layout_below="@+id/center"
-        android:layout_marginTop="-5dp"
-        android:divider="@android:color/transparent"
-        android:dividerHeight="10dp"
-        android:orientation="vertical" />
+    />
+
 
 </RelativeLayout>
