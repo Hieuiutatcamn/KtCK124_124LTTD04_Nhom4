@@ -20,33 +20,15 @@ import java.util.ArrayList;
 public class Fragment_person1 extends Fragment{
 
     private View mview;
-    ListView lvSV;
-    ArrayList<User> arrayUsers;
-    SinhVienAdapter adapter;
-
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        mview = inflater.inflate(R.layout.fragment_home, container, false);
-        Anhxa();
-        adapter = new SinhVienAdapter(getContext(), R.layout.dongsv_activity, arrayUsers);
-        lvSV.setAdapter(adapter);
-
-
-
+        mview = inflater.inflate(R.layout.fragment_person1, container, false);
         return mview;
 
     }
 
-    private void Anhxa()
-    {
-        lvSV=(ListView) mview.findViewById(R.id.list_user);
-        arrayUsers= new ArrayList<>();
-        arrayUsers.add(new User("1", new String[]{""}, "nhat@gmail.com", "Nam", "123", "123", "22115053122127", "Phan Minh Nhat"));
 
-
-    }
 
 
 

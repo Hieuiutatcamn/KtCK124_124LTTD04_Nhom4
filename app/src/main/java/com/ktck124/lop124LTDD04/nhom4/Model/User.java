@@ -12,9 +12,9 @@ public class User {
     private String TenKhachHang;
     private String HinhAnh;
 
-    public User(String _id, List<String> cuaHangDaLuu, String email, String gioiTinh, String hinhAnh, String password, String SDT, String tenKhachHang) {
+    public User(String _id, String email, String gioiTinh, String hinhAnh, String password, String SDT, String tenKhachHang) {
         this._id = _id;
-        CuaHangDaLuu = cuaHangDaLuu;
+      //  CuaHangDaLuu = cuaHangDaLuu;
         Email = email;
         GioiTinh = gioiTinh;
         HinhAnh = hinhAnh;
@@ -48,13 +48,13 @@ public class User {
         this.SDT = SDT;
     }
 
-    public List<String> getCuaHangDaLuu() {
-        return CuaHangDaLuu;
-    }
+    //public List<String> getCuaHangDaLuu() {
+     //   return CuaHangDaLuu;
+    //}
 
-    public void setCuaHangDaLuu(List<String> cuaHangDaLuu) {
-        CuaHangDaLuu = cuaHangDaLuu;
-    }
+//public void setCuaHangDaLuu(List<String> cuaHangDaLuu) {
+    //    CuaHangDaLuu = cuaHangDaLuu;
+   // }
 
     public String getEmail() {
         return Email;
