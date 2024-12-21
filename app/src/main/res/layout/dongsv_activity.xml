@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="#E0FFFF">
+
+    <!-- Tên sinh viên -->
+    <TextView
+        android:id="@+id/ten_sinhvien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nguyễn Văn A"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginStart="16dp" />
+
+    <!-- Mã sinh viên -->
+    <RelativeLayout
+        android:id="@+id/textViewStudentID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ten_sinhvien"
+        android:layout_alignStart="@id/ten_sinhvien">
+        <TextView
+            android:id="@+id/tvLabelID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã SV:"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:layout_marginTop="4dp" />
+        <TextView
+            android:id="@+id/ma_sinhvien"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tvLabelID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SV001"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:layout_marginTop="4dp" />
+    </RelativeLayout>
+
+</RelativeLayout>
